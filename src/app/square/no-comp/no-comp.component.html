@@ -1,7 +1,11 @@
 <div class="modal-header">
     <div class="message">
         {{ message }}
+        <ng-container *ngIf="ps">
+            <img src="../../../assets/images/red-rose.jpg" alt="">
+        </ng-container>
     </div>
+ 
 </div>
 
 <div class="modal-body">
@@ -18,7 +22,26 @@
         <img src="../../../assets/images/cute-cat.gif" alt="">
     </ng-container>
     <ng-container *ngIf="count === 4">
+        <img src="../../../assets/images/toji-toji-fushiguro.gif" alt="">
+    </ng-container>
+    <ng-container *ngIf="count === 5">
         <img src="../../../assets/images/dog-deal-with-it.gif" alt="">
+    </ng-container>
+    <ng-container *ngIf="ps===true">
+        <p>
+            Hey Aki, 
+            I can't beleive its been a year since I met you. Time has been passing so fast since I've been with you, I guess that just shows
+            how much fun it has been having you in my life. And this is even more so when Im with you. Like literally doing nothing with you doesnt bore me and I love it.
+            If you've got to this part, you must have said yes or atleast I forced you into this path but regardless :P, thank you so much for being my Valentine. I wish I was with
+            you today and on valentines but I guess I cant have everything I want. I feel lucky everyday to have the privilege to call your pretty ass my girlfriend. Thank you for tolerating me 
+            through everything and I hopen I dont bore you anytime soon. You're the love of my life. Since I dont wanna use the L word in consecutive statements heres a filler statement between with a 
+            valentines joke on theme: 
+            <br>
+            Why did the Valentine's Day roses go to jail?
+            Because it was caught stealing hearts!
+            <br>
+            <span style="font-weight: bold">I love you</span>
+        </p>
     </ng-container>
 </div>
 

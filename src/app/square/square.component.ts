@@ -19,11 +19,13 @@ export class SquareComponent implements OnInit {
   count: number = 0;
   buttonHeight = 38;
   buttonWidth = 100;
+  ps: boolean = false;
   messages: Array<String> = [
     'Are you sure about this, please reconsider',
     'Oh come Onnnnnnnnnnnnnnnnnnnnnnnnnnnnnn',
     'Pretty please with sugar, honey, chocolate, swiss chocolate and twix on top',
-    'But Im your babyyyy'
+    'But Im your babyyyy',
+    'You cant say No now, can you'
   ];
   changeMind: string = 'Change your mind?';
   disableMind: boolean = false;
@@ -39,7 +41,7 @@ export class SquareComponent implements OnInit {
 
   ifYes(): void {
     this.panda = !this.panda;
-    this.count = 4;
+    this.count = 5;
   }
 
   ifNo(): void {
@@ -54,11 +56,21 @@ export class SquareComponent implements OnInit {
   }
 
   mindChange(): void {
+    this.ps = true;
     this.changeMind = 'You mine noww';
     this.disableMind = true;
     const modalRef = this.modalService.open(NoCompComponent);
 
     modalRef.componentInstance.message = 'Nopee, you cantt, you stuck with me nowww';
     modalRef.componentInstance.count = this.count;
+  }
+
+  psFn(): void {
+    const modalRef = this.modalService.open(NoCompComponent);
+
+    modalRef.componentInstance.message = 'To my dear valentine';
+    modalRef.componentInstance.ps = this.ps;
+    modalRef.componentInstance.count = 6;
+
   }
 }

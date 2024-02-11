@@ -13,13 +13,13 @@ export class NoCompComponent {
 
    message: string = '';
    count: number = 0;
-
+   ps: boolean = false;
+   
    constructor(
     private modal: NgbModal
    ) {}
 
    onClose(): void {
-    console.log(this.count);
     this.modal.dismissAll();
    }
 }

@@ -14,9 +14,14 @@
             <span class="title">Will you be my Valentine?</span>
             <div class="yes-no">
                 <button [style.width.px]="buttonWidth" [style.height.px]="buttonHeight" (click)="ifYes()" class="yes btn btn-success">Yes</button>
-                <button [disabled]="count===4" (click)="ifNo()" class="btn btn-danger">No</button>
+                <button [disabled]="count===5" (click)="ifNo()" class="btn btn-danger">No</button>
             </div>
         </ng-container>
     </div>
+   <ng-container *ngIf="ps === true">
+    <div class="bottom-section">
+        <button class="btn btn-danger" (click)="psFn()">PS</button>
+    </div>
+   </ng-container>
 
 </div>
