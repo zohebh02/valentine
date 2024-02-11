@@ -1,0 +1,50 @@
+.random {
+    // height: 600px;
+    .top-title {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 20px;
+        display: flex;
+        .main-title {
+        }
+        img {
+            padding-bottom: 10px;
+            height: 70px;
+        }
+
+    }
+    .main-stuff {
+        font-family:cursive;
+        margin-top: 100px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding:5px;
+        .confetti {
+            position: absolute;
+            width: 0.5vmin;
+            aspect-ratio: 1;
+            // background: /* background intentionally blank */;
+            background-size: 0.5vmin 0.5vmin;
+            background-repeat: no-repeat;
+          }
+        img {
+            height: 250px;
+        }
+        .title {
+            padding-right: 5px;
+            font-weight: bold;
+            font-size: 36px;
+        }
+        .yes-no {
+            button {
+                width: 100px;
+                margin: 15px;
+            }
+        }
+
+
+    }
+}

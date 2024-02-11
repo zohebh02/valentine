@@ -1,0 +1,27 @@
+<div class="modal-header">
+    <div class="message">
+        {{ message }}
+    </div>
+</div>
+
+<div class="modal-body">
+    <ng-container *ngIf="count === 0">
+        <img src="../../../assets/images/cat-kitten.gif" alt="">
+    </ng-container>
+    <ng-container *ngIf="count === 1">
+        <img src="../../../assets/images/cute-grey-kitten.gif" alt="">
+    </ng-container>
+    <ng-container *ngIf="count === 2">
+        <img src="../../../assets/images/cute-kitten (1).gif" alt="">
+    </ng-container>
+    <ng-container *ngIf="count === 3">
+        <img src="../../../assets/images/cute-cat.gif" alt="">
+    </ng-container>
+    <ng-container *ngIf="count === 4">
+        <img src="../../../assets/images/dog-deal-with-it.gif" alt="">
+    </ng-container>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-secondary btn-sm" (click)="onClose()">Close</button>
+</div>

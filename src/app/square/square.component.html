@@ -1,0 +1,22 @@
+<div class="random">
+    <div class="top-title">
+        <div class="main-title">
+            <img src="../../assets/images/cute-cat.gif" alt="">
+            <span class="">For The Best Girlfriend</span>
+        </div>
+    </div>
+    <div class="main-stuff">
+        <ng-container *ngIf="panda">
+            <img src="../../assets/images/bear-kiss-bear-kisses.gif" alt="">
+            <button (click)="mindChange()" [disabled]="disableMind" class="btn btn-info">{{ changeMind }}</button>
+        </ng-container>
+        <ng-container *ngIf="!panda">
+            <span class="title">Will you be my Valentine?</span>
+            <div class="yes-no">
+                <button [style.width.px]="buttonWidth" [style.height.px]="buttonHeight" (click)="ifYes()" class="yes btn btn-success">Yes</button>
+                <button [disabled]="count===4" (click)="ifNo()" class="btn btn-danger">No</button>
+            </div>
+        </ng-container>
+    </div>
+
+</div>
